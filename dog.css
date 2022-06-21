@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+:root {
+  --font: "Work Sans", sans-serif;
+  --primary: #031b3f;
+  --secondary: #fff;
+  --tertiary: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--font);
+  /*border: 1px solid red;*/
+}
+
+h2 {
+  text-align: center;
+  margin: 2% 0 0 0;
+}
+
+img {
+  margin: 5% auto;
+  height: 10%;
+  width: 20%;
+  display: block;
+}
+
+#more-button {
+  padding: 1% 4%;
+  font-size: 1em;
+  /*position: fixed;*/
+}
+
+button {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  color: var(--secondary);
+  background-color: var(--tertiary);
+  border: none;
+  border-radius: 0.2em;
+}
