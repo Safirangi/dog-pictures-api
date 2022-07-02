@@ -1,8 +1,8 @@
+function picture() {
+
 const url = "https://dog.ceo/api/breeds/image/random";      //API url, through which requests are sent to the server.
+document.querySelector("button").addEventListener("click", picture);    //Event Listener added to button for a click event.
 
-//let image = document.querySelector("button").addEventListener("click", picture);    //Event Listener added to button for a click event.
-
-//function picture() {
 fetch(url)
   .then((res) => res.json()) //parse response as JSON
   .then((data) => {
@@ -14,4 +14,4 @@ fetch(url)
   .catch((err) => {
     console.log(`Error ${err}`);
   });
-//}
+}
