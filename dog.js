@@ -7,6 +7,8 @@ fetch(url)
   .then((res) => res.json()) //parse response as JSON
   .then((data) => {
     console.log(data.message); //object is sent as a response
+  
+  //Image URL is set to 'src' attribute of the 'img' tag
     document.querySelector("img").src = data.message;
   })
   .catch((err) => {
